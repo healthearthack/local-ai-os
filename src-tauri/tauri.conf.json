@@ -1,9 +1,16 @@
 {
-  "package": {
-    "productName": "FI Money Overlay",
-    "version": "1.0.0"
+  "$schema": "https://schema.tauri.app/config/2",
+
+  "identifier": "com.fi.moneyoverlay",
+  "productName": "FI Money Overlay",
+  "version": "1.0.0",
+
+  "build": {
+    "frontendDist": "../src",
+    "devUrl": "tauri://localhost"
   },
-  "tauri": {
+
+  "app": {
     "windows": [
       {
         "label": "main",
@@ -11,19 +18,19 @@
         "transparent": true,
         "decorations": false,
         "alwaysOnTop": true,
-        "fullscreen": false,
         "resizable": false,
         "width": 400,
         "height": 200
       }
-    ],
-    "bundle": {
-      "identifier": "com.fi.moneyoverlay",
-      "windows": {
-        "nsis": {
-          "installerIcon": null,
-          "displayLanguageSelector": false
-        }
+    ]
+  },
+
+  "bundle": {
+    "active": true,
+    "targets": "all",
+    "windows": {
+      "nsis": {
+        "displayLanguageSelector": false
       }
     }
   }
