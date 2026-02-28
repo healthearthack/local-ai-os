@@ -1,1 +1,31 @@
+{
+  "package": {
+    "productName": "FI Money Overlay",
+    "version": "1.0.0"
+  },
+  "tauri": {
+    "windows": [
+      {
+        "label": "main",
+        "title": "FI Money Overlay",
+        "transparent": true,
+        "decorations": false,
+        "alwaysOnTop": true,
+        "fullscreen": false,
+        "resizable": false,
+        "width": 400,
+        "height": 200
+      }
+    ],
+    "bundle": {
+      "identifier": "com.fi.moneyoverlay",
+      "windows": {
+        "nsis": {
+          "installerIcon": null,
+          "displayLanguageSelector": false
+        }
+      }
+    }
+  }
+}
 
